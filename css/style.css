@@ -1,0 +1,495 @@
+/*
+Theme Name: Núcleo Cultural Theme
+Author: Luana Menezes e Luís Fernando
+Description: A theme created for Núcleo Cultural's website
+Version: 1.0
+*/
+
+
+/*
+--------------------------------------------------
+ GLOBAL STYLES
+-------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100);
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+}
+
+
+
+.hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+
+/*TEMP STYLES*/
+
+#projetos, #servicos, #parceiros, #contato, #nucleo {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+
+.title-aside-wrapper {
+-webkit-transform:translate3d(0,0,0);
+-webkit-perspective: 1000;
+-webkit-backface-visibility: hidden;
+  display: -webkit-box;
+    display: -ms-flexbox;
+      display: flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+/*  -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+      align-self: center;*/
+
+
+  /*text-align: center;*/
+  overflow: hidden;
+}
+
+
+.title-aside {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100!important;
+  -webkit-transform: translate3d(0, 0, 0);
+    /*transform: rotate(90deg);
+    transform-origin: 255% 55% 0;
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: 255% 55% 0;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: 255% 55% 0;*/
+    /*transform-origin: top left 0;*/
+    /*font-size:.9rem;*/
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    font-weight: 300;
+/*    background: pink;*/
+    font-size: 3rem;
+    width: 3rem;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+
+}
+
+.bg-laranja {
+  background-color:#de4e2c;
+}
+
+.texto-laranja {
+  color:#de4e2c;
+}
+
+.texto-branco {
+  color: #ffffff;
+}
+/*
+--------------------------------------------------
+ NAVBAR
+-------------------------------------------------- */
+
+#logo {
+  height: 3.125rem;
+  width: 9.375rem
+}
+
+
+/*
+--------------------------------------------------
+ HEADER
+-------------------------------------------------- */
+
+#carousel-header .carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Carousel base class */
+#carousel-header {
+  margin-bottom: 4rem;
+}
+
+
+/*
+--------------------------------------------------
+ O NUCLEO
+-------------------------------------------------- */
+@media (min-width: 320px) {
+	
+	.branco{
+		color: white;
+	}
+
+	.laranja{
+		color: #fe7e00;
+	}
+	
+	 .fundo-quemsomos {
+	  display: flex;
+	  background: white;
+	  padding: 15px;
+	  margin: auto;
+	}
+	
+	#texto-missao{
+		color: white;
+		font-weight: ligther;
+		text-align: center;
+		padding-top: 30px;
+		margin-left: auto;
+	}
+
+	#texto-criatividade{
+		color: white; 
+		font-weight: ligther;
+		text-align: center;
+		margin-left: auto;
+		padding-top: 40px;
+	}
+	
+	.bg-escuro {
+		background: #252525;
+		display: flex;
+		border-radius: 25px;
+		padding: 10px;
+		margin: auto;
+	}
+	
+	.imagem-redesociais{
+		margin: auto;
+	}
+	
+	.seta-baixo{
+		margin: auto;
+		padding-top: 10px;
+		/*height:30px;*/
+	}
+}
+
+@media (min-width: 992px) {
+	 .fundo-quemsomos {
+	  display: flex;
+	  background: white;
+	  height: 530px;
+	  padding: 40px;
+	  padding-top: 60px;
+	  padding-right: 80px;
+	  margin: auto;
+	}
+
+	.cards>div:nth-child(odd) {
+	 margin-bottom: 2vh;
+	}
+	.cards>div:nth-child(even) {
+	 margin-left: -150px;
+	 z-index: 2;
+	}
+	 .cards>div:nth-child(3) {
+	 z-index: 3;
+	}
+	
+	#texto-missao{
+		color: white;
+		font-weight: ligther;
+		margin-left: 60px;
+		text-align: left;
+	}
+
+	#texto-criatividade{
+		color: white; 
+		font-weight: ligther;
+		margin-right: 60px;
+		text-align: right;
+	}
+
+	.bg-escuro {
+	background: #252525;
+	display: flex;
+	border-radius: 25px;
+	padding: 30px;
+	margin: auto;
+	}
+	
+	.imagem-redesociais{
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+	
+	.seta-baixo{
+	margin: auto;
+	padding-top: 30px;
+	}
+}
+
+
+.zoom{
+	overflow: hidden;
+}
+
+.zoom img{
+	max-width: 100%;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.zoom:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.bg-escuro {
+	background: #252525;
+	display: flex;
+	border-radius: 25px;
+	padding: 30px;
+	margin: auto;
+}
+
+.bg-patrocine {
+	background: white;
+	display: flex;
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+}
+
+.texto-branco{
+	color: white;
+	margin: auto;
+}
+
+#texto-patrocine{
+	padding-top: 40px;
+}
+
+
+ul { 
+	list-style-type: none;
+}
+
+
+/*
+--------------------------------------------------
+ SERVIÇOS
+-------------------------------------------------- */
+.servicos-item {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.servicos-item img {
+  width: 160px;
+  margin-bottom: 1rem;
+}
+
+.servicos-item h2 {
+  font-size: 1.5rem;
+  color: #de4e2c;
+  font-weight: 700;
+
+}
+
+.serviços-item p {
+  font-size: 1.25em;
+}
+
+/*
+--------------------------------------------------
+ PORTIFÓLIO/PROJETOS
+-------------------------------------------------- */
+
+#projetos .carousel-item img {
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+#projetos .carousel-caption{
+  opacity:0;
+  transition:500ms ease-in-out;
+}
+
+#projetos .carousel-item:hover .carousel-caption{
+  opacity:1;
+}
+
+.btn-projetos {
+    font-weight: 600;
+    background-color: white;
+    color: #de4e2c;
+    border-color: #de4e20;
+}
+
+.tablet {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+
+/*
+--------------------------------------------------
+ PARCEIROS
+-------------------------------------------------- */
+
+/*
+--------------------------------------------------
+ CONTATO
+-------------------------------------------------- */
+.margin-auto{
+	margin:auto;
+}
+
+.mensagem-margin{
+	margin-top:25px;
+}
+
+.formulario
+{
+  background-color:#de4e2c;
+  color:white;
+}
+
+#enviar
+{
+  background-color:#de4e2c;
+  color:white;
+  border-radius:25px;
+  width:120px;
+}
+
+/*
+--------------------------------------------------
+ FOOTER
+-------------------------------------------------- */
+
+
+
+
+
+/*
+--------------------------------------------------
+ RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 320px) {
+	#imagem-quemsomos{
+		padding: 25px 10px 10px 20px;
+		margin: auto;
+	}
+	
+	.img-redonda{
+	padding: 20px;
+	margin: auto;
+	}
+	
+	#logo-vertical {
+	  height: 150px;
+	  margin-top: 30px
+	}
+
+	.rodape{
+		padding:20px 10px 0 10px;
+	}
+
+}
+/* SM*/
+@media (min-width: 576px) {
+	#imagem-quemsomos{
+		padding: 25px 20px 20px 60px;
+		margin: auto;
+	}
+	
+	#logo-vertical {
+	  height: 200px;
+	  margin: 30px 0 30px 30px;
+	}
+
+	.rodape{
+		padding:30px 30px 0 30px;
+	}
+
+	#seta-cima{
+		margin-left:30px;
+	}
+}
+/* MD*/
+@media (min-width: 768px) {
+
+#carousel-header .carousel-caption h2 {
+  font-size: 5rem;
+}
+
+#imagem-quemsomos{
+	padding: 40px 20px 25px 60px;
+	margin: auto;
+}
+
+.img-redonda{
+padding: 10px;
+margin: auto;
+}
+
+.rounded-circle{
+	margin-left: 25px;
+}
+
+.zoom{
+	padding-left: 30px;
+}
+
+}
+
+/* lg*/
+@media (min-width: 992px) {
+	#imagem-quemsomos{
+		padding: 25px 20px 25px 20px;
+		margin: auto;
+	}
+	
+	.img-redonda{
+	padding: 20px;
+	margin: auto;
+	}
+	
+	.rounded-circle{
+		margin-left: 0px;
+	}
+	
+	.zoom{
+		padding-left: 0px;
+	}
+}
+
+/* XL*/
+@media (min-width: 1200px) {
+
+}
+
